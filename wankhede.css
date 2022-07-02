@@ -50,9 +50,12 @@ header{
 }
 #h2 button:hover{
     background-color:  #ffffff;
-    color: #00273E;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+}
+#h2 button a:hover{
+    color: #00273E;
+
 }
 #pc{
     display: flex;
