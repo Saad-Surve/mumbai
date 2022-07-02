@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima', cursive;
+}
+html{
+    height:100%;
+}
+body
+{
+    height: 100%;
+    background-color: #0f0d0d;
+}
+#heading{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#h1{
+    padding: 10px 0px;
+    font-size: 40px;
+    color: orange;
+    text-align: left;
+    padding-left: 25px;
+}
+#h1 span{
+    color: white;
+}
+#h2{
+    padding-right: 8px;
+}
+#h2 button{
+    margin: 25px 10px;
+    padding: 20px 0px;
+    border-radius: 40px;
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    border: none;
+}
+#h2 a{
+    padding: 20px 20px;
+    font-size: 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+}
+#h2 button:hover{
+    background-color: white;
+    color: orange;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#content{
+    width: 40%;
+    padding: 15px 15px;
+    /* border: 2px red solid; */
+}
+#about{
+    color: orange;
+    text-align: center;
+    font-size: 30px;
+}
+#maincontent{
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+}
+#images{
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img.jpg); 
+    box-shadow: inset 10px 10px 30px 30px #0f0d0d ;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+@media only screen and (max-width : 1030px) {
+   #main{
+    flex-direction: column-reverse;
+   }
+   #maincontent{
+    font-size: 15px;
+   }
+   #content{
+    padding-top: 0px;
+    width: 100%;
+   }
+   #images{
+    width: 100%;
+   }
+   #heading{
+    padding-top: 10px;
+    flex-direction: column;
+   }
+   #h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+   }
+   #h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 0px;
+   }
+   #h2 button{
+    padding: 10px 20px;
+   }
+   #h2 button a{
+    padding: 0px;
+    font-size: 17px;
+   }
+}

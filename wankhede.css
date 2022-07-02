@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    /* height: 100%; */
+    font-family: 'Roboto Slab', serif;
+}
+body{
+    /* height: 100%; */
+    background-color: aliceblue;
+}
+header{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    border-bottom: 5px #00273E solid;
+    border-top: 5px #00273E solid;
+    font-weight: bold;
+}
+#h1{
+    font-size: 40px;
+    text-align: left;
+    color: #00273E;
+    padding-left: 10px;
+}
+#h2{
+    padding: 0px 0px;
+    padding-right: 25px;
+}
+#h2 button{
+    margin: 25px 10px;
+    padding: 20px 0px;
+    border-radius: 40px;
+    font-weight: bold;
+    color: #D6D6D6;
+    background-color: #00273E;
+    border: none;
+}
+#h2 a{
+    padding: 20px 20px;
+    font-size: 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #D6D6D6;
+}
+#h2 button:hover{
+    background-color:  #ffffff;
+    color: #00273E;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+#pc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px;
+    border-bottom:5px #00273E solid;
+    color: #00273E;
+    font-weight: 600;
+}
+#content1{
+
+    width: 35%;
+}
+main img{
+    max-width: 100%;
+}
+#content2{
+    width: 30%;
+    padding: 0px 15px;
+    padding-bottom: 15px;
+}
+#content3{
+    width: 35%;
+}
+#about{
+    font-size: 35px;
+    text-align: center;
+}
+#maincontent{
+    font-size: 25px;
+    text-align: justify;
+}
+#images{
+    border-bottom:5px #00273E solid;
+    padding: 0px ;
+    margin: 0px;
+}
+#images img{
+    width: 100%;
+}
+#mobile{
+    display: none;
+}
+@media  only screen and (max-width : 1028px) {
+    header{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #h2{
+        display: flex;
+        padding: 0px;
+        margin: auto;
+    }
+    #h1{
+        padding: 15px 10px;
+        text-align: center;
+    }
+    #mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column  ;
+        border-bottom:5px #00273E solid;
+    }
+    #pc{
+        display: none;
+    }
+    #mobimg{
+        display: flex;
+        width: 100%;
+    }
+    #content1{
+        width: 50%;
+    }
+    #content3{
+        width: 50%;
+    }
+    #content2{
+        width: 100%;
+    }
+    #about{
+        font-size: 25px;
+    }
+    #maincontent{
+        font-size: 20px;
+    }
+    #h2 button a{
+        font-size: 20px;
+        padding: 0px;
+    }
+}
